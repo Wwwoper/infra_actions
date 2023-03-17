@@ -67,5 +67,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           sudo docker pull v1ncento/infraactions:latest
-          sudo docker container stop $(sudo docker ps -aq)
+          sudo docker container stop $(sudo docker ps -aq) 
           sudo docker run --rm -d -p 8000:8000 v1ncento/infraactions:latest
