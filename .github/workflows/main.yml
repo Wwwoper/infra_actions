@@ -55,6 +55,7 @@ jobs:
             tags: v1ncento/infraactions:latest
   
   deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
