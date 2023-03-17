@@ -29,6 +29,6 @@ jobs:
 
     - name: Test with flake8
       run: python -m flake8
-      
+
     - name: Test with django tests
-      run: python infra_project/manage.py test
+      run: python infra_project/manage.py test infra_app
