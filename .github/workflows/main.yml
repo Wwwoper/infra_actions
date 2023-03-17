@@ -67,5 +67,5 @@ jobs:
         #passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем
         script: |
           sudo docker pull v1ncento/infraactions:latest
-          sudo docker stop $(sudo docker ps -a -q)
+          sudo docker stop $(docker ps -q)
           sudo docker run --rm -d -p 8000:8000 v1ncento/infraactions:latest
